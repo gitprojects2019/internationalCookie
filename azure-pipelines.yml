@@ -27,7 +27,7 @@ steps:
     ArtifactName: 'myWebsiteName'
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: 'internationalCookie'
+    azureSubscription: 'Azure_learn_2020 (5482fce7-10c6-437b-b380-a049763b8b45)'
     appType: 'webApp'
     appName: 'iternationalcookie-eu'
     package: '$(Build.ArtifactStagingDirectory)/**/*.zip'
