@@ -20,7 +20,7 @@ namespace IternationalCookieWeb.Controllers
 
         public IActionResult Index()
         {
-            ViewBag.Application_Location = "TESt";
+            ViewBag.Application_Location = System.Globalization.CultureInfo.CurrentUICulture.DisplayName;
             return View();
 
         }
