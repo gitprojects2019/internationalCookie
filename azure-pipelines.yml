@@ -39,4 +39,13 @@ steps:
     archiveType: 'zip'
     archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
     replaceExistingArchive: true
-    
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'Azure_learn_2020 (5482fce7-10c6-437b-b380-a049763b8b45)'
+    appType: 'webApp'
+    WebAppName: 'iternationalcookie-eu'
+    deployToSlotOrASE: true
+    ResourceGroupName: 'internationalCookie'
+    SlotName: 'production'
+    packageForLinux: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
