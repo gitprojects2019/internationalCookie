@@ -49,3 +49,5 @@ steps:
     ResourceGroupName: 'internationalCookie'
     SlotName: 'production'
     packageForLinux: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+
+# final script for asp.net core web application
