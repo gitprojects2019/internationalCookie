@@ -30,5 +30,5 @@ steps:
     azureSubscription: 'internationalCookie'
     appType: 'webApp'
     appName: 'iternationalcookie-eu'
-    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    package: '$(Build.ArtifactStagingDirectory)/**/*.zip'
     deploymentMethod: 'auto'
